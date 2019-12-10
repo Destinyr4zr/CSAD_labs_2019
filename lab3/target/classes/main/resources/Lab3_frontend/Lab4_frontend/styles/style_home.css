@@ -1,0 +1,50 @@
+body{
+    background: URL(/images/back.jpg);
+    background-size: cover;
+    font: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 350px;
+}
+
+.textPicture{
+    display: inline-block;
+    position: relative;
+    margin-top: 150px;
+}
+
+.textPicture span{
+    display:inline-block;
+    position:absolute;
+    top:75px;
+    left:0px;
+    
+    
+
+/* Оформление текста */
+    color: black;
+    font-family: 'Montserrat', sans-serif;;
+    font-size:20px;
+    text-align: center;
+
+/* Фон */
+    padding:10px 30px;
+}
+
+.nav {   
+    font-size: 20px;
+    /*text-transform: uppercase;*/
+    
+}
+
+.nav_link{
+    color: #fff;
+    text-decoration: none;
+    
+    margin: 0 40px;
+    
+    transition: color .2s linear;
+}
+
+.nav_link:hover {
+    color: aqua;
+}

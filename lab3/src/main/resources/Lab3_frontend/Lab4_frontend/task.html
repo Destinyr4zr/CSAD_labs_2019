@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style_task.css"/>
+    <title>Индивидуальное задание</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+    <script type="text/javascript" src="function.js"></script>
+</head>
+<body>
+    <div class="navig">
+        <nav class="nav">
+        <a class="nav_link" href="index.html">Главная</a>
+        <a class="nav_link" href="task.html">Индивидуальное задание</a>
+        <a class="nav_link" href="table.html">Работа с таблицей</a>
+    </nav>
+    </div>
+    
+    <div class="textPicture">
+        <img src="images/bg2.JPG" width="800px" height="340px">
+        
+        <form>
+            <p><input type="text" name="number" placeholder="Введите число" size="19" id="num"/></p>
+            <p><input type="text" name="in_system" placeholder="В систему исчисления" size="19" maxlength="11" id="in"/></p>
+            <p><input type="text" name="out_system" placeholder="В систему исчисления" size="19" maxlength="11" id="out"/></p>
+            <p>
+                <button type="button" onClick="reqReadyStateChange();">Перевести</button> 
+            </p>
+            
+            <b><p align="center" id="resu"></p></b>
+        </form>
+    </div>
+    
+    <div class="textArea">
+    
+    </div>
+</body>
+</html>
