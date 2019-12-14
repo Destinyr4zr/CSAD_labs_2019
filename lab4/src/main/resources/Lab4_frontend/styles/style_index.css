@@ -1,0 +1,62 @@
+body{
+    background: URL(/images/back.jpg);
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+.nav {   
+    font-size: 21px;
+    text-transform: uppercase;
+    padding: 50px;
+}
+
+
+.nav_link{
+    color: #7a7c7c;
+    text-decoration: none;
+    position: relative;
+    margin:0 0 0 40px;
+    transition: color .2s linear;
+    text-align: justify-all;
+}
+
+.nav_link:hover {
+    color: blueviolet;
+}
+
+
+.textPicture{
+    position: absolute;
+    margin: auto;
+    padding: 100px;
+}
+
+.textPicture span{
+    display:inline-block;
+    position:relative;
+    
+    
+
+/* Оформление текста */
+    color: white;
+    font-family: 'bukvitza';
+    font-size:50px;
+    text-align: center;
+    font-weight: 1000
+/* Фон */
+    padding:10px 30px;
+    margin: auto;
+    
+}
+
+h2{
+    border: 3px solid white;
+    padding: 1px;
+}
+
+@font-face{
+    font-family:'bukvitza';
+  src: url('/fonts/buka.ttf') format('truetype');
+}

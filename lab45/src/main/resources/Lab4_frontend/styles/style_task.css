@@ -1,0 +1,50 @@
+body{
+    background: URL(/images/back.jpg);
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+.nav {   
+    font-size: 21px;
+    text-transform: uppercase;
+    padding: 50px;
+}
+
+
+.nav_link{
+    color: #7a7c7c;
+    text-decoration: none;
+    position: relative;
+    margin:0 0 0 40px;
+    transition: color .2s linear;
+    text-align: justify-all;
+}
+
+.nav_link:hover {
+    color: blueviolet;
+}
+
+
+.textPicture{
+    margin: auto;
+    padding: 100px;
+}
+
+.textPicture input{
+    font-size: 20px;
+}
+
+.textPicture button{
+    font-size: 20px;
+    margin: auto;
+}
+
+.textPicture a{
+    font-size: 20px;
+}
+
+.textPicture b{
+    font-size: 20px;
+}
