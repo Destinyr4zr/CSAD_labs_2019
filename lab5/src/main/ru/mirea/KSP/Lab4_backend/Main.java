@@ -7,7 +7,7 @@ import org.eclipse.jetty.webapp.WebAppContext;
 
 public class Main {
     public static PencilsService pencil_table_service;
-    public static final String FRONTEND_PATH = "E:/Projects/5sem/KSPlabs/Lab45/Lab4_with_Jetty/src/main/resources/Lab4_frontend";
+    public static final String FRONTEND_PATH = "E:/Projects/5sem/KSPlabs/Выполнено/Lab5/Lab4_with_Jetty/src/main/resources/Lab4_frontend";
     public static final TemplateWriter templwriter = new TemplateWriter();
     public static void main(String[] args) throws Throwable {
         Server server = new Server(1488);

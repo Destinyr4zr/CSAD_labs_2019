@@ -6,11 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lab3" />
+        <module name="Lab3_with_Jetty" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="lab3" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

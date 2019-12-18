@@ -47,7 +47,8 @@ body{
     font-size: 20px;
     text-align: center;
     font-weight: bold;
-    color: cadetblue;
+    color: darkviolet;
+    background-color: darkgray;
     float: left;
 }
 

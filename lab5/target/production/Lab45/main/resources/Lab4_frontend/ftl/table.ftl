@@ -27,20 +27,20 @@
    <div class="table_user">    
     <table id="tbl" cellspacing="0" cellpadding="0" border>
         <tr>
-            <td><input name="Дата поступления" id="columndate" disabled="true"></td>
-            <td><input name="Цвет" id="columncolor" disabled="true"></td>
-            <td><input name="Длина" id="columnlength" disabled="true"></td>
+            <td><input value="Дата поступления" id="columndate" disabled="true" style="color: black"></td>
+            <td><input value="Цвет" id="columncolor" disabled="true" style="color: black"></td>
+            <td><input value="Длина" id="columnlength" disabled="true" style="color: black"></td>
         </tr>
         <#if table??>
         <#list table as row>
             <tr>
-                <td><input name=${row.getDate()!} value=${row.getDate()!}  disabled="true"></td>
-                <td><input name=${row.getColor()!} value=${row.getColor()!} disabled="true"></td>
-                <td><input name=${row.getLength()!} value=${row.getLength()!} disabled="true"></td>
+                <td><input name=${row.getDate()!} value=${row.getDate()!}  disabled="true" id=${row.getId()!}></td>
+                <td><input name=${row.getColor()!} value=${row.getColor()!} disabled="true" id=${row.getId()!}></td>
+                <td><input name=${row.getLength()!} value=${row.getLength()!} disabled="true" id=${row.getId()!}></td>
                 <#if row??>
-                    <td>
-                        <input type="button" value="Изменить" onClick="javascript: changeROW ()">
-                        <input type="button" value="Удалить" onClick="javascript: deleteROWbyID ()">
+                    <td id =${row.getId()!}>
+                        <input type="button" value="Изменить" name="ed" onClick="javascript: changeROW (event)" style="color: rgba(4,4,4,0.69)">
+                        <input type="button" value="Удалить" name="del" onClick="javascript: deleteROWbyID (event)" style="color: rgba(4,4,4,0.69)">
                     </td>
                 </#if>
             </tr>

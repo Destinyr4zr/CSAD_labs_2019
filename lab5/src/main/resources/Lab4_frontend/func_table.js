@@ -87,6 +87,9 @@ function deleteROWbyID(event) {
 
 onload = function () {
     changemode = false;
+    document.getElementById('columndate').disabled = 'true';
+    document.getElementById('columncolor').disabled = 'true';
+    document.getElementById('columnlength').disabled = 'true';
 };
 
 

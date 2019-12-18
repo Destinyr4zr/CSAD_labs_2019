@@ -49,7 +49,7 @@ public class TemplateWriter {
         Template template = setConfiguration().getTemplate(templatepath);
         response.setCharacterEncoding("utf-8");
         PrintWriter returner = response.getWriter();
-        Path filePath = Paths.get("E:/Projects/5sem/KSPlabs/Lab45/Lab4_with_Jetty/src/main/resources/Lab4_frontend/ftl/menu.ftl");
+        Path filePath = Paths.get(Main.FRONTEND_PATH+"/ftl/menu.ftl");
         String menu = new String(Files.readAllBytes(filePath), StandardCharsets.UTF_8);
         map.put("menu", menu);
         StringWriter sw = new StringWriter();

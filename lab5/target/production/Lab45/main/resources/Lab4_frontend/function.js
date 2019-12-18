@@ -3,19 +3,24 @@ function reqReadyStateChange() {
     var in_sys = document.getElementById("in").value;
     var out_sys = document.getElementById("out").value;
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:1488/post");
-    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xhr.send('inputradix='+in_sys+'&outputradix='+out_sys+'&entry='+numbers);
-    xhr.onreadystatechange = function() { 
-    if(xhr.statusText=="OK")
+    if (numbers!=""&&in_sys!=""&&out_sys!="")
     {
-        document.open();
-        document.write(xhr.responseText);
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "http://localhost:1488/post");
+        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhr.send('inputradix='+in_sys+'&outputradix='+out_sys+'&entry='+numbers);
+        xhr.onreadystatechange = function() {
+            if(xhr.statusText=="OK")
+            {
+                document.open();
+                document.write(xhr.responseText);
+            }
+            else if(xhr.statusText=="Not Found")
+                alert("Ресурс не найден");
+            else
+                alert(xhr.statusText);
+        };
     }
-    else if(xhr.statusText=="Not Found")
-        alert("Ресурс не найден");
     else
-        alert(xhr.statusText);
-    };
+        alert ("Введите поля!")
 }

@@ -27,9 +27,9 @@
    <div class="table_user">    
     <table id="tbl" cellspacing="0" cellpadding="0" border>
         <tr>
-            <td><input value="Дата поступления" id="columndate" disabled="true" style="color: black"></td>
-            <td><input value="Цвет" id="columncolor" disabled="true" style="color: black"></td>
-            <td><input value="Длина" id="columnlength" disabled="true" style="color: black"></td>
+            <td><input name = "Дата поступления" value="Дата поступления" id="columndate" style="color: black" disabled = "true"></td>
+            <td><input name = "Цвет" value="Цвет" id="columncolor" style="color: black" disabled = "true"></td>
+            <td><input name = "Длина" value="Длина" id="columnlength" style="color: black" disabled = "true"></td>
         </tr>
         <#if table??>
         <#list table as row>

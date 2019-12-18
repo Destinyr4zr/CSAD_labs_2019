@@ -74,7 +74,6 @@ onload = function () {
     res = document.getElementById('result');
     var request = new XMLHttpRequest();
     request.open("GET", "http://localhost:1488/table/load", false);
-
     request.onreadystatechange = function () {
         if (request.statusText == "OK") {
             if (request.responseText.length > 4) {

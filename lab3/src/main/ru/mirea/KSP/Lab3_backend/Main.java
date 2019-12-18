@@ -15,7 +15,7 @@ public class Main {
         Server server = new Server(1488);
         WebAppContext webapp = new WebAppContext();
         webapp.setContextPath("/");
-        webapp.setResourceBase("E:/Projects/5sem/KSPlabs/Lab3/Lab3_with_Jetty/src/main/resources/Lab3_frontend");
+        webapp.setResourceBase("E:/Projects/5sem/KSPlabs/Выполнено/Lab3/Lab3_with_Jetty/src/main/resources/Lab3_frontend");
         webapp.setParentLoaderPriority(true);
         webapp.addServlet(IndexServlet.class, "/index");
         webapp.addServlet(TableServlet.class, "/table");
